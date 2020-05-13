@@ -33,8 +33,8 @@ public class CustomerDaoTest {
     public void testSave(){
        Customer customer=new Customer();
        customer.setCustid(3);
-       customer.setCustName("秦世交秦世交");
-       customer.setCustAddress("湖南");
+       customer.setCustName("小秦哥");
+       customer.setCustAddress("湖南株洲");
        customer.setCustNumber("12312313213");
        customerDao.save(customer);
     }

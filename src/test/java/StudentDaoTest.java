@@ -50,7 +50,7 @@ public class StudentDaoTest {
             public Predicate toPredicate(Root<Student> root, CriteriaQuery<?> query, CriteriaBuilder cb) {
                 Path<Object> name = root.get("name");
                 Path<Object> address = root.get("address");
-                Predicate p1 = cb.equal(name, "秦世交");
+                Predicate p1 = cb.equal(name, "秦小交");
                 Predicate p2 = cb.equal(address, "湖南长沙");
                 //将多个查询条件组合到一起：组合（满足一并且满足条件二：与关系，满足一或满足条件二：或关系）
                 Predicate and = cb.and(p1, p2);//以与的方式拼接多个查询条件

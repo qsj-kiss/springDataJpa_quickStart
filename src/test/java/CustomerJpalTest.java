@@ -17,14 +17,14 @@ public class CustomerJpalTest {
     * */
     @Test
     public void testFindJpql(){
-        Customer customer = customerDao.findJpql("秦世交");
+        Customer customer = customerDao.findJpql("小秦子");
         System.out.println(customer);
     }
     /*根据用户名和id查找数据
      * */
     @Test
     public void findCustomerByNameAndId(){
-        Customer customer = customerDao.findCustomerByNameAndId("秦世交",1);
+        Customer customer = customerDao.findCustomerByNameAndId("小秦子",1);
         System.out.println(customer);
     }
     /*根据用户名查找数据
@@ -37,6 +37,6 @@ public class CustomerJpalTest {
     @Transactional//添加事务的支持
     @Rollback(value = false)
     public void updateByID(){
-        customerDao.updateByID(1,"我真帅");
+        customerDao.updateByID(1,"大秦子");
     }
 }
